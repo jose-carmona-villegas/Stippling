@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1350</width>
+    <height>827</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralWidget
+{
+background: #606060;
+margin: 0px;
+padding: 0px;
+}
+
+#topBar 
+{
+border: none;
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 #a6a6a6, stop: 0.08 #7f7f7f,
+stop: 0.39999 #717171, stop: 0.4 #626262,
+stop: 0.9 #4c4c4c, stop: 1 #333333);
+border: 2px solid #555;
+border-radius: 10px;
+}
+
+#topBar QPushButton 
+{
+margin: 0px;
+color: #333;
+border: 2px solid #555;
+border-radius: 10px;
+padding: 2px;
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888);
+min-width: 25px;
+}
+
+#topBar QPushButton:hover 
+{
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb);
+}
+
+#topBar QPushButton:pressed 
+{
+background: qradialgradient(cx: 0.4, cy: -0.1,
+fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 #fff, stop: 1 #ddd);
+}
+
+#openGLContainer
+{
+margin: 0px;
+color: #333;
+border: 2px solid #555;
+border-radius: 10px;
+padding: 2px;
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888);
+min-width: 30px;
+padding: 20px;
+}
+
+#stippling_openGLContainer
+{
+margin: 0px;
+color: #333;
+border: 2px solid #555;
+border-radius: 10px;
+padding: 2px;
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888);
+min-width: 30px;
+padding: 20px;
+}
+
+#openGLViewport
+{
+width: 800px;
+height: 600px;
+}
+
+#stippling_openGLViewport
+{
+width: 800px;
+height: 600px;
+}
+
+#dockWidget_view
+{
+background: #606060;
+}
+
+#dockWidgetContents_view
+{
+border: none;
+}
+
+#comboBox_interaction
+{
+margin: 0px;
+color: #333;
+border: 2px solid #555;
+border-radius: 10px;
+padding: 2px;
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888);
+min-width: 30px;
+}</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>732</height>
+    </size>
+   </property>
+   <widget class="QFrame" name="topBar">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>4</y>
+      <width>700</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>700</width>
+      <height>0</height>
+     </size>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="topMargin">
+      <number>9</number>
+     </property>
+     <property name="bottomMargin">
+      <number>9</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="selectionToolButton">
+       <property name="text">
+        <string>Select</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addOperationButton">
+       <property name="minimumSize">
+        <size>
+         <width>33</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Operation</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addCylinderButton">
+       <property name="text">
+        <string>Cylinder</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addPrismButton">
+       <property name="text">
+        <string>Prism</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="openGLContainer">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>51</y>
+      <width>860</width>
+      <height>336</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <widget class="GLWidget3DEngine" name="openGLViewport" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>778</width>
+       <height>268</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="stippling_openGLContainer">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>1109</width>
+      <height>336</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="GLWidgetStippling" name="stippling_openGLViewport" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>820</width>
+       <height>620</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </widget>
+   <zorder>openGLContainer</zorder>
+   <zorder>stippling_openGLContainer</zorder>
+   <zorder>topBar</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1350</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_Image"/>
+    <addaction name="separator"/>
+    <addaction name="actionImport_CSG_Tree"/>
+    <addaction name="actionExport_CSG_Tree"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="menuFloor">
+     <property name="title">
+      <string>Floor</string>
+     </property>
+     <addaction name="actionHiddenFloor"/>
+     <addaction name="actionGrid_only"/>
+     <addaction name="actionSolid_only"/>
+     <addaction name="actionGrid_and_solid"/>
+    </widget>
+    <widget class="QMenu" name="menuPanels">
+     <property name="title">
+      <string>Panels</string>
+     </property>
+     <addaction name="actionCamera_controls"/>
+    </widget>
+    <widget class="QMenu" name="menuEntities">
+     <property name="title">
+      <string>Entities</string>
+     </property>
+     <addaction name="actionAs_Wireframe"/>
+     <addaction name="actionAs_Solid"/>
+     <addaction name="actionAs_Illuminated_Solid"/>
+    </widget>
+    <addaction name="actionReset_viewing_transformations"/>
+    <addaction name="separator"/>
+    <addaction name="menuFloor"/>
+    <addaction name="menuEntities"/>
+    <addaction name="separator"/>
+    <addaction name="menuPanels"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <widget class="QMenu" name="menuCamera_Model">
+     <property name="title">
+      <string>Camera Model</string>
+     </property>
+    </widget>
+    <addaction name="menuCamera_Model"/>
+    <addaction name="separator"/>
+    <addaction name="actionConfiguration"/>
+   </widget>
+   <widget class="QMenu" name="menuStippling">
+    <property name="title">
+     <string>Stippling</string>
+    </property>
+    <widget class="QMenu" name="menuGenerate_and_render">
+     <property name="title">
+      <string>Generate and render</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionWith_Floyd_Steinberg_dithering"/>
+     <addaction name="actionWith_Stucki_dithering"/>
+    </widget>
+    <addaction name="menuGenerate_and_render"/>
+    <addaction name="separator"/>
+    <addaction name="actionRe_apply_Stipple_Dot_dispersion"/>
+    <addaction name="separator"/>
+    <addaction name="actionGenerate_final_image"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuStippling"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_entities">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>320</width>
+     <height>350</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>3000</width>
+     <height>524287</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="features">
+    <set>QDockWidget::NoDockWidgetFeatures</set>
+   </property>
+   <property name="windowTitle">
+    <string>CSG Tree</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_entities">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <widget class="EntityTreeWidget" name="treeWidget_Entities">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>1000</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string notr="true">1</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidgetCameraControls">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>250</width>
+     <height>130</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>524287</width>
+     <height>130</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>Camera Controls</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>211</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Rotation</string>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>71</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pitch</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+      <property name="indent">
+       <number>-1</number>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_Pitch">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>91</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="decimals">
+       <number>3</number>
+      </property>
+      <property name="minimum">
+       <double>-90.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>90.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.100000000000000</double>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>311</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Translation</string>
+     </property>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Height</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+      <property name="indent">
+       <number>-1</number>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_Height">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>91</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="decimals">
+       <number>3</number>
+      </property>
+      <property name="minimum">
+       <double>-999999999.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>999999999.990000009536743</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>10</y>
+        <width>81</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Camera
+distance</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+      <property name="indent">
+       <number>-1</number>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_CameraDistance">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>20</y>
+        <width>91</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="decimals">
+       <number>3</number>
+      </property>
+      <property name="minimum">
+       <double>-999999999.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>999999999.990000009536743</double>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidgetSupportVisualization">
+   <property name="minimumSize">
+    <size>
+     <width>73</width>
+     <height>320</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>Support Visualization</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3">
+    <widget class="GLWidget3DEngineSuperiorVisualization" name="superiorView_openGLViewport" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>300</width>
+       <height>300</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <action name="actionOpen_Image">
+   <property name="text">
+    <string>Open Image</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionReset_viewing_transformations">
+   <property name="text">
+    <string>Reset viewing transformations</string>
+   </property>
+  </action>
+  <action name="actionCanon">
+   <property name="text">
+    <string>canon</string>
+   </property>
+  </action>
+  <action name="actionGrid_only">
+   <property name="text">
+    <string>Grid only</string>
+   </property>
+  </action>
+  <action name="actionSolid_only">
+   <property name="text">
+    <string>Solid only</string>
+   </property>
+  </action>
+  <action name="actionGrid_and_solid">
+   <property name="text">
+    <string>Grid and solid</string>
+   </property>
+  </action>
+  <action name="actionConfiguration">
+   <property name="text">
+    <string>Configuration</string>
+   </property>
+  </action>
+  <action name="actionCamera_controls">
+   <property name="text">
+    <string>Camera controls</string>
+   </property>
+  </action>
+  <action name="actionEntities">
+   <property name="text">
+    <string>Entities</string>
+   </property>
+  </action>
+  <action name="actionAs_Wireframe">
+   <property name="text">
+    <string>As Wireframe</string>
+   </property>
+  </action>
+  <action name="actionAs_Solid">
+   <property name="text">
+    <string>As Solid</string>
+   </property>
+  </action>
+  <action name="actionAs_Illuminated_Solid">
+   <property name="text">
+    <string>As Illuminated Solid</string>
+   </property>
+  </action>
+  <action name="actionWith_Floyd_Steinberg_dithering">
+   <property name="text">
+    <string>with Floyd-Steinberg dithering</string>
+   </property>
+  </action>
+  <action name="actionWith_Stucki_dithering">
+   <property name="text">
+    <string>with Stucki dithering</string>
+   </property>
+  </action>
+  <action name="actionImport_CSG_Tree">
+   <property name="text">
+    <string>Import CSG Tree</string>
+   </property>
+  </action>
+  <action name="actionExport_CSG_Tree">
+   <property name="text">
+    <string>Export CSG Tree</string>
+   </property>
+  </action>
+  <action name="actionRe_apply_Stipple_Dot_dispersion">
+   <property name="text">
+    <string>Re-apply Stipple Dot dispersion</string>
+   </property>
+  </action>
+  <action name="actionGenerate_final_image">
+   <property name="text">
+    <string>Generate final image</string>
+   </property>
+  </action>
+  <action name="actionHiddenFloor">
+   <property name="text">
+    <string>Hidden</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GLWidget3DEngine</class>
+   <extends>QWidget</extends>
+   <header>glwidget3dengine.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>EntityTreeWidget</class>
+   <extends>QTreeWidget</extends>
+   <header>entitytreewidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GLWidgetStippling</class>
+   <extends>QWidget</extends>
+   <header>glwidgetstippling.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GLWidget3DEngineSuperiorVisualization</class>
+   <extends>QWidget</extends>
+   <header>glwidget3denginesuperiorvisualization.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

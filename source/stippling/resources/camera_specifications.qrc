@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>camera_specifications/camera_specifications.xml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,1 @@
+El directorio stippling contiene el código fuente. Debe copiarse a disco duro para poder compilarse.

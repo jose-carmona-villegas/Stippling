@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cameras>
+	<camera>
+		<name>Canon PowerShot G1 X</name>
+		<sensorSizeX>18.7</sensorSizeX>
+		<sensorSizeY>14.0</sensorSizeY>
+		<cropFactor>1.9</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon PowerShot G6</name>
+		<sensorSizeX>7.11</sensorSizeX>
+		<sensorSizeY>5.33</sensorSizeY>
+		<cropFactor>4.87</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon PowerShot G9</name>
+		<sensorSizeX>7.6</sensorSizeX>
+		<sensorSizeY>5.7</sensorSizeY>
+		<cropFactor>4.7</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon PowerShot G12</name>
+		<sensorSizeX>7.4</sensorSizeX>
+		<sensorSizeY>5.6</sensorSizeY>
+		<cropFactor>4.7</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS M</name>
+		<sensorSizeX>22.3</sensorSizeX>
+		<sensorSizeY>14.9</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 100D</name>
+		<sensorSizeX>22.3</sensorSizeX>
+		<sensorSizeY>14.9</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 700D</name>
+		<sensorSizeX>22.3</sensorSizeX>
+		<sensorSizeY>14.9</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 650D</name>
+		<sensorSizeX>22.3</sensorSizeX>
+		<sensorSizeY>14.9</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 600D</name>
+		<sensorSizeX>22.3</sensorSizeX>
+		<sensorSizeY>14.9</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 550D</name>
+		<sensorSizeX>22.3</sensorSizeX>
+		<sensorSizeY>14.9</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 500D</name>
+		<sensorSizeX>22.3</sensorSizeX>
+		<sensorSizeY>14.9</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 1100D</name>
+		<sensorSizeX>22.2</sensorSizeX>
+		<sensorSizeY>14.7</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 450D</name>
+		<sensorSizeX>22.2</sensorSizeX>
+		<sensorSizeY>14.8</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 1000D</name>
+		<sensorSizeX>22.2</sensorSizeX>
+		<sensorSizeY>14.8</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 400D</name>
+		<sensorSizeX>22.2</sensorSizeX>
+		<sensorSizeY>14.8</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 350D</name>
+		<sensorSizeX>22.2</sensorSizeX>
+		<sensorSizeY>14.8</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 300D</name>
+		<sensorSizeX>22.7</sensorSizeX>
+		<sensorSizeY>15.1</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 70D</name>
+		<sensorSizeX>22.5</sensorSizeX>
+		<sensorSizeY>15.0</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 60D</name>
+		<sensorSizeX>22.3</sensorSizeX>
+		<sensorSizeY>14.9</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 50D</name>
+		<sensorSizeX>22.3</sensorSizeX>
+		<sensorSizeY>14.9</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 40D</name>
+		<sensorSizeX>22.2</sensorSizeX>
+		<sensorSizeY>14.8</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 30D</name>
+		<sensorSizeX>22.5</sensorSizeX>
+		<sensorSizeY>15.0</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 20D</name>
+		<sensorSizeX>22.5</sensorSizeX>
+		<sensorSizeY>15.0</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 10D</name>
+		<sensorSizeX>22.7</sensorSizeX>
+		<sensorSizeY>15.1</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 7D</name>
+		<sensorSizeX>22.3</sensorSizeX>
+		<sensorSizeY>14.9</sensorSizeY>
+		<cropFactor>1.6</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 6D</name>
+		<sensorSizeX>35.8</sensorSizeX>
+		<sensorSizeY>23.9</sensorSizeY>
+		<cropFactor>1.0</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 5D Mark III</name>
+		<sensorSizeX>36.0</sensorSizeX>
+		<sensorSizeY>24.0</sensorSizeY>
+		<cropFactor>1.0</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 5D Mark II</name>
+		<sensorSizeX>35.8</sensorSizeX>
+		<sensorSizeY>23.9</sensorSizeY>
+		<cropFactor>1.0</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 5D</name>
+		<sensorSizeX>35.8</sensorSizeX>
+		<sensorSizeY>23.9</sensorSizeY>
+		<cropFactor>1.0</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 1D X</name>
+		<sensorSizeX>36.0</sensorSizeX>
+		<sensorSizeY>24.0</sensorSizeY>
+		<cropFactor>1.0</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 1D Mark IV</name>
+		<sensorSizeX>27.9</sensorSizeX>
+		<sensorSizeY>18.6</sensorSizeY>
+		<cropFactor>1.3</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 1D Mark III</name>
+		<sensorSizeX>28.1</sensorSizeX>
+		<sensorSizeY>18.7</sensorSizeY>
+		<cropFactor>1.3</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 1D Mark II N</name>
+		<sensorSizeX>28.7</sensorSizeX>
+		<sensorSizeY>19.1</sensorSizeY>
+		<cropFactor>1.3</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 1D Mark II</name>
+		<sensorSizeX>28.7</sensorSizeX>
+		<sensorSizeY>19.1</sensorSizeY>
+		<cropFactor>1.3</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 1Ds Mark III</name>
+		<sensorSizeX>36.0</sensorSizeX>
+		<sensorSizeY>24.0</sensorSizeY>
+		<cropFactor>1.0</cropFactor>
+	</camera>
+	<camera>
+		<name>Canon EOS 1Ds Mark II</name>
+		<sensorSizeX>36.0</sensorSizeX>
+		<sensorSizeY>24.0</sensorSizeY>
+		<cropFactor>1.0</cropFactor>
+	</camera>
+	<camera>
+		<name>KODAK EASYSHARE M1063 DIGITAL CAMERA</name>
+		<sensorSizeX>6.08</sensorSizeX>
+		<sensorSizeY>4.59</sensorSizeY>
+		<cropFactor>5.69</cropFactor>
+	</camera>
+	<camera>
+		<name>PENTAX Optio S5n</name>
+		<sensorSizeX>5.75</sensorSizeX>
+		<sensorSizeY>4.32</sensorSizeY>
+		<cropFactor>6.02</cropFactor>
+	</camera>
+</cameras>

@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>shaders/colorShader.frag</file>
+        <file>shaders/colorShader.vert</file>
+        <file>shaders/pickingShader.frag</file>
+        <file>shaders/pickingShader.vert</file>
+        <file>shaders/stippleShader.frag</file>
+        <file>shaders/stippleShader.vert</file>
+        <file>shaders/textureShader.frag</file>
+        <file>shaders/textureShader.vert</file>
+        <file>shaders/zColorShader.frag</file>
+        <file>shaders/zColorShader.vert</file>
+        <file>shaders/xzColorShader.frag</file>
+        <file>shaders/xzColorShader.vert</file>
+        <file>shaders/xyColorShader.frag</file>
+        <file>shaders/xyColorShader.vert</file>
+    </qresource>
+</RCC>

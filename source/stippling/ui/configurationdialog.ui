@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConfigurationDialog</class>
+ <widget class="QDialog" name="ConfigurationDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>949</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>General Configuration</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>520</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>891</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="tab_general">
+    <attribute name="title">
+     <string>General</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>361</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualization rendering</string>
+     </property>
+     <widget class="QCheckBox" name="useTileRendering">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>331</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Render on multiple textures (tile rendering)</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>261</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Tile size</string>
+      </property>
+      <widget class="QSpinBox" name="tileWidth">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>30</y>
+         <width>181</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>16000</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="tileHeight">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>60</y>
+         <width>181</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>16000</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>67</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Width:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>56</y>
+         <width>67</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Heigth:</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_colors">
+    <attribute name="title">
+     <string>Colours</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>231</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Entity</string>
+     </property>
+     <widget class="QPushButton" name="colorButtonEntityPositionCP">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>91</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="colorButtonEntityResizeCP">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>130</y>
+        <width>91</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Resize</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="colorButtonEntityRotateCP">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>200</y>
+        <width>91</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rotation</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="colorButtonEntityScaleCP">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>200</y>
+        <width>91</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Scale</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="colorButtonEntityWires">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>91</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Wires</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>10</y>
+       <width>131</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Floor</string>
+     </property>
+     <widget class="QPushButton" name="colorButtonFloorWires">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>91</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Wires</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_stippling">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="title">
+     <string>Stippling</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>361</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Random Number Generator seed</string>
+     </property>
+     <widget class="QSpinBox" name="rngSeed">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>261</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>999999999</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>521</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Stipple dot dispersion</string>
+     </property>
+     <widget class="QSpinBox" name="stippleDotDispersion">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>261</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>999999999</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>20</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(Possible dot position variation)</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>531</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Percentage of  non 3D-Model overlapping stippling dots to be generated</string>
+     </property>
+     <widget class="QSpinBox" name="unmodeledStipplingChance">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>261</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="singleStep">
+       <number>1</number>
+      </property>
+      <property name="value">
+       <number>5</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>286</x>
+        <y>27</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(dots that do not overlap 
+the model)</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>531</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Percentage of 3D-Model overlapping stippling dots to be generated</string>
+     </property>
+     <widget class="QSpinBox" name="modeledStipplingChance">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>261</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="value">
+       <number>60</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>30</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>(dots that overlap the model)</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>181</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Edge detection method</string>
+     </property>
+     <widget class="QComboBox" name="edgeDetectionMethod">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>161</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>10</y>
+       <width>141</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Packing Factor</string>
+     </property>
+     <widget class="QSpinBox" name="packingFactor">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>131</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>9</number>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ConfigurationDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ConfigurationDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
