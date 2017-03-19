@@ -1,1 +1,3 @@
 Stippling is a project focused on developing a research line under the Non-Photorealistic Rendering area of Computer Graphics. It is a multi-platform 3D engine whose purpose is simulating artistic handmade stippling through the use and improvement of existing 2D algorithms (using a picture as input) and 3D reconstruction (of the objects in the picture that the artist is interested in depicting).
+
+See the "use examples" folder for some screenshots of the application (battery test). The documentation ("doc" folder) is also filled with interesting implementation details and screenshots, although for now it is in Spanish only.
